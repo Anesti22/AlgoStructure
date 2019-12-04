@@ -10,5 +10,9 @@
     "testEnvironment": "node"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fsevents": "^2.1.2",
+    "jest": "^24.9.0"
+  }
 }

@@ -7,18 +7,18 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-    // We use split to convert the string in an array
+    // Turn 'str' into a array
     const arr = str.split('');
 
-    // Then we reverse
+    // Call 'reverse' method on that array
     arr.reverse();
 
-    // And ten join that again in a string
-    arr.join('');
-
-    // After that we return the arr.join('')
+    // Join the array back into a string & Return the result
     return arr.join('');
+
 }
+
+reverse('Hello')
 
 module.exports = reverse;
 
