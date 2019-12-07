@@ -7,6 +7,19 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+
+// The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+function palindrome(str) {
+    return  str.split('').every((char, i) => {
+        return char === str[str.length - i - 1];
+    });
+}
 
 module.exports = palindrome;
+
+
+// function palindrome(str) {
+//     const reversed = str.split('').reverse('').join('');
+//     return reversed === str;
+//     // expected output: true
+// }
